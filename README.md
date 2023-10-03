@@ -1,2 +1,2 @@
 # Houses_Price_Predictions
-Existing Boston House Price Prediction modularised and structured
+Existing Boston House Price Prediction modularized and structured
