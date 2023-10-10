@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from numpy import ndarray
 
 class LinearRegression:
 
@@ -34,7 +35,7 @@ class LinearRegression:
         self.weights = None
         self.bias = None
 
-    def fit(self, X, y):
+    def fit(self, X: ndarray, y: ndarray)-> None:
 
         """
         Fit the linear regression model to the training data.
@@ -58,7 +59,7 @@ class LinearRegression:
             self.weights -= self.lr * dw
             self.bias -= self.lr * db
 
-    def predict(self, X: pd.DataFrame) -> pd.Series:
+    def predict(self, X: ndarray) -> ndarray:
 
         """
         Make predictions on new data.
@@ -75,7 +76,7 @@ class LinearRegression:
         return X.dot(self.weights) + self.bias
 
     @staticmethod
-    def mean_squared_error(y_true: pd.Series, y_pred: pd.Series) -> float:
+    def mean_squared_error(y_true: ndarray, y_pred: ndarray) -> float:
 
         """
         Calculate the Mean Squared Error (MSE) between true and predicted values.
@@ -94,7 +95,7 @@ class LinearRegression:
 
     @staticmethod
 
-    def mean_absolute_error(y_true: pd.Series, y_pred: pd.Series) -> float:
+    def mean_absolute_error(y_true: ndarray, y_pred: ndarray) -> float:
 
         """
         Calculate the Mean Absolute Error (MAE) between true and predicted values.
@@ -112,7 +113,7 @@ class LinearRegression:
         return np.mean(np.abs(y_true - y_pred))
 
     @staticmethod
-    def r_squared(self, y_true: pd.Series, y_pred: pd.Series) -> float:
+    def r_squared(self, y_true: ndarray, y_pred: ndarray) -> float:
         """
         Calculate the R-squared (coefficient of determination) between true and predicted values.
 
