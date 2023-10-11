@@ -8,6 +8,6 @@ Houses/
 
 Prediction/
 
-venv/
+.venv/
 
 .idea/
