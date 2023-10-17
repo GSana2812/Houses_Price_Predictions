@@ -10,3 +10,4 @@ The classes created:
 3. ModelEvaluator -> creates two charts, bar chart and scatter plot containing also the regression line, to visualize the results.
 
 
+Libraries used: numpy, pandas, scikit-learn, matplotlib
