@@ -1,4 +1,4 @@
-# Houses_Price_Predictions
+# Houses Price Predictions
 Existing Boston House Price Prediction modularized and structured
 
 In the [Traditional ML](https://github.com/GSana2812/Traditional_ML) repository I created a simple notebook predicting the prices of houses in Boston. In this project, I structured the code around Classes and functions, so it can be more readable and reusable for future purposes.
